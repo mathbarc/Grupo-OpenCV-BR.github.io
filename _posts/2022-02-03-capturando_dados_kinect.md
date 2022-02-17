@@ -68,7 +68,7 @@ cmake -DBUILD_PYTHON3=ON -DCYTHON_EXECUTABLE=/usr/bin/cython3 ..
 #lembre-se que você deve ter o python e a numpy instalados para usar as flags acima
 make
 sudo make install
-sudo ldconfig -v
+ldconfig -v
 
 ```
 
