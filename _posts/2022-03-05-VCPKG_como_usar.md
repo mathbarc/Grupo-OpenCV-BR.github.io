@@ -23,7 +23,7 @@ Te levarei por cada passo que é importante fazer para que o VCPKG funcione de f
 Aahh ia me esquecendo, também funciona para o Linux.
 
 
-Começando pelo começo.
+Começando pelo começo, este tutorial está voltado ao Windows.
 
 Primeiro instale o Cmake em sua máquina.
 
