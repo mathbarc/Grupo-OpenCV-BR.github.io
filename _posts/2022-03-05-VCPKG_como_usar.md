@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: VCPKG, como usar ?
 author:
   name: Andre Emidio
   link: [Linkedin](https://www.linkedin.com/in/andre-emidio/)
@@ -167,6 +167,7 @@ O resultado no terminal será algo que está abaixo
 
 É o nosso saudoso [pudim.com.br](http://pudim.com.br/)
 
+Wikipédia da página [Pudim](https://pt.wikipedia.org/wiki/Pudim.com.br)
 
 ```html
 
