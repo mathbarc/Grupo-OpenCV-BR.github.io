@@ -1,9 +1,9 @@
 ---
 layout: post
+title:  "VCPKG como usar"
 author:
   name: Andre Emidio
   link: [Linkedin](https://www.linkedin.com/in/andre-emidio/)
-title:  "VCPKG como usar"
 date:   2022-03-05 21:18:34 -0300
 categories: c++ programação vcpkg compilar cmake opencv
 ---
