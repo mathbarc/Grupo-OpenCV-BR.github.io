@@ -94,6 +94,26 @@ Para Clion da Jetbrains
     <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/clion.gif"/>
 </div>
 
+
+Para o VSCODE da Microsoft 
+
+```json
+{
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "D:/andreemidio/libraries/vcpkg/scripts/buildsystems/vcpkg.cmake" //Esse caminho se refere ao local onde instalei o VCPKG
+    },
+    "cmake.configureOnOpen": true,
+}
+```
+
+<div class="image-container" style="display: flex; justify-content: center;">
+    <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/clion.gif"/>
+</div>
+
+
+
+Para o QT Creator 
+
 [Andre Emidio](https://www.linkedin.com/in/andre-emidio/)
 
 Desenvolvedor em Visão Computacional/Backend e membro do Grupo OpenCV Brasil.
