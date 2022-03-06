@@ -1,10 +1,10 @@
 ---
-title: VCPKG como usar
+title:  "VCPKG, como usar ?"
 author:
   name: Andre Emidio
   link: https://www.linkedin.com/in/andre-emidio/
-date: 2022-03-05 21:18:34 -0300
-categories: [c++, programação, vcpkg, compilar, cmake, opencv]
+date:   2022-03-05 21:18:34 -0300
+categories: [c++, programação, vcpkg, compilar, cmake, opencv, windows]
 tags: [vcpk windows c++]
 pin: false
 ---
@@ -22,7 +22,7 @@ Te levarei por cada passo que é importante fazer para que o VCPKG funcione de f
 Aahh ia me esquecendo, também funciona para o Linux.
 
 
-Começando pelo começo.
+Começando pelo começo, este tutorial está voltado ao Windows.
 
 Primeiro instale o Cmake em sua máquina.
 
@@ -107,7 +107,7 @@ Para o VSCODE da Microsoft
 ```
 
 <div class="image-container" style="display: flex; justify-content: center;">
-    <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/clion.gif"/>
+    <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/vscode.gif"/>
 </div>
 
 
