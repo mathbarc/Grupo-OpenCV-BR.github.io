@@ -108,7 +108,7 @@ Para o VSCODE da Microsoft
 ```
 
 <div class="image-container" style="display: flex; justify-content: center;">
-    <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/clion.gif"/>
+    <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/vscode.gif"/>
 </div>
 
 
