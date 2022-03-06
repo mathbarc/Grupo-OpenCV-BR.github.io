@@ -112,8 +112,6 @@ Para o VSCODE da Microsoft
 
 
 
-Para o QT Creator 
-
 [Andre Emidio](https://www.linkedin.com/in/andre-emidio/)
 
 Desenvolvedor em Visão Computacional/Backend e membro do Grupo OpenCV Brasil.
