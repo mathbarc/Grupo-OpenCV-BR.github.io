@@ -82,7 +82,7 @@ Adicionando o Auto complete:
 Ainda no terminal na pasta do clone do VCPKG, testa o funcionamento instale a lib Curl, que serve para fazer chamadas HTTP.
 
 ```
-.\vcpkg.exe install sdl2 curl --debug
+.\vcpkg.exe install curl --debug
 ```
 
 
@@ -110,6 +110,97 @@ Para o VSCODE da Microsoft
     <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/clion.gif"/>
 </div>
 
+
+Código para testar a lib acima
+
+CMakeLists.txt
+
+```cmake
+cmake_minimum_required(VERSION 2.8)
+
+project(teste)
+
+find_package(CURL CONFIG REQUIRED)
+
+
+add_executable(teste main.cpp)
+
+
+target_link_libraries(teste PRIVATE CURL::libcurl)
+
+```
+
+
+No arquivo de código :
+
+main.cpp
+
+```c++
+#include <iostream>
+#include <curl/curl.h>
+
+static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp){
+    ((std::string*)userp)->append((char*)contents, size * nmemb);
+    return size * nmemb;
+}
+
+int main(){
+  CURL * curl;
+  CURLcode res;
+  std::string readBuffer;
+
+  curl = curl_easy_init();
+  if(curl) {
+    curl_easy_setopt(curl, CURLOPT_URL, "http://pudim.com.br/");
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
+    res = curl_easy_perform(curl);
+    curl_easy_cleanup(curl);
+
+    std::cout << readBuffer << std::endl;
+  }
+  return 0;
+}
+```
+
+O resultado no terminal será algo que está abaixo
+
+É o nosso saudoso pudim.com.br
+
+
+```html
+
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Pudim</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="image">
+            <img src="pudim.jpg" alt="">
+        </div>
+        <div class="email">
+            <a href="mailto:pudim@pudim.com.br">pudim@pudim.com.br</a>
+        </div>
+    </div>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-28861757-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+
+```
 
 
 [Andre Emidio](https://www.linkedin.com/in/andre-emidio/)
