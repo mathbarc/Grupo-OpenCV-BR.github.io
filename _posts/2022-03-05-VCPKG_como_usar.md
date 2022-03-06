@@ -1,14 +1,13 @@
 ---
-title:  "VCPKG como usar"
+title: VCPKG como usar
 author:
   name: Andre Emidio
   link: https://www.linkedin.com/in/andre-emidio/
-date:   2022-03-05 21:18:34 -0300
+date: 2022-03-05 21:18:34 -0300
 categories: [c++, programação, vcpkg, compilar, cmake, opencv]
 tags: [vcpk windows c++]
 pin: false
 ---
-
 
 
 Antes de tudo, o que é VCPKG ?
