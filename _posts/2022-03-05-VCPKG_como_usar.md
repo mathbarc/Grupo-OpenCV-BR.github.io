@@ -10,7 +10,6 @@ pin: false
 ---
 
 
-
 Antes de tudo, o que é VCPKG ?
 
 
