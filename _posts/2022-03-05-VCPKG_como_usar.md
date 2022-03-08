@@ -5,7 +5,7 @@ author:
   link: https://www.linkedin.com/in/andre-emidio/
 date:   2022-03-05 21:18:34 -0300
 categories: [c++, programação, vcpkg, compilar, cmake, opencv, windows]
-tags: [vcpk windows c++]
+tags: [vcpkg windows c++]
 pin: false
 ---
 
@@ -109,6 +109,24 @@ Para o VSCODE da Microsoft
 <div class="image-container" style="display: flex; justify-content: center;">
     <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/vscode.gif"/>
 </div>
+
+Para o QT Creator (Qtzinho da massa para os intímos).
+
+Tem uma pequena alteração na string de configuração, mas é simples, só mudar o caminho da pasta que está feito.
+
+A configuração passo a passo está no gif meus bacanas.
+
+```cmake
+
+-DCMAKE_TOOLCHAIN_FILE:STRING=D:/andreemidio/libraries/vcpkg/scripts/buildsystems/vcpkg.cmake
+
+```
+
+<div class="image-container" style="display: flex; justify-content: center;">
+    <img src="{{site.baseurl}}/assets/img/imagens/vcpkg/qt.gif"/>
+</div>
+
+
 
 
 Código para testar a lib acima
