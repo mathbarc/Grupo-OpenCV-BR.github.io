@@ -4,8 +4,8 @@ author:
   name: Natalia Amorim
   link: https://github.com/NataliaCarvalho03
 date: 2022-02-03 21:14:34 -0300
-categories: [kinect, openkinect, c++]
-tags: [kinect libfreenec c++]
+categories: [kinect, libfreenect]
+tags: [kinect, libfreenect, c++, opencv]
 pin: false
 ---
 
